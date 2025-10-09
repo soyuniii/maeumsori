@@ -10,7 +10,9 @@ export const unstable_settings = {
 
 export default function RootLayout() {
   const [fontsLoaded] = useFonts({
-    'leaf-unz': require('../src/assets/fonts/leaf-unz.ttf'),
+    'Pretendard-Medium': require('../src/assets/Pretendard-Medium.ttf'),
+    'Pretendard-Regular': require('../src/assets/Pretendard-Regular.ttf'),
+    'Pretendard-SemiBold': require('../src/assets/Pretendard-SemiBold.ttf'),
   });
 
   if (!fontsLoaded) return null;

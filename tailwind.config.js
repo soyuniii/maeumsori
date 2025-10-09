@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        "leaf-unz": ["leaf-unz"],
+        "Pretendard-Medium": ["Pretendard-Medium"],
+        "Pretendard-Regular": ["Pretendard-Regular"],
+        "Pretendard-SemiBold": ["Pretendard-SemiBold"],
       },
     },
   },

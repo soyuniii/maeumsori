@@ -5,11 +5,10 @@ import { Text as RNText } from "react-native";
 const TextClassContext = React.createContext<string | undefined>(undefined);
 
 const VARIANT_MAP: Record<string, string> = {
-  h1: "font-leaf-unz text-4xl",
-  h2: "font-leaf-unz text-3xl",
-  b1: "font-leaf-unz text-[20px]",
-  b2: "font-leaf-unz text-[16px]",
-  b3: "font-leaf-unz text-[10px]",
+  h1: "font-Pretendard-SemiBold text-xl",
+  h2: "font-Pretendard-Medium text-lg",
+  b1: "font-Pretendard-Regular text-[16px]",
+  b2: "font-Pretendard-Regular text-[12px]",
 };
 
 const DEFAULT_VARIANT = 'b1';
