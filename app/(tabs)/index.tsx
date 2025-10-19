@@ -57,11 +57,13 @@ export default function HomeScreen() {
 
   return (
     <SafeAreaView className="bg-monotone-100 flex-1">
-      <View className="flex-row px-4 py-2">
+      <View className="flex-row px-4 py-2 items-center">
         <TouchableOpacity onPress={() => {}}>
           <Icon name="Menu" size={24} />
         </TouchableOpacity>
-        <Text type="h2">{date}</Text>
+        <View className="absolute left-0 right-0 items-center">
+          <Text type="h1">{date}</Text>
+        </View>
       </View>
       <View className="flex-1 justify-center items-center">
         <AnimatedFlatList
@@ -87,7 +89,7 @@ export default function HomeScreen() {
           })}
         />
       </View>
-      <TouchableOpacity className="absolute bottom-10 right-10 bg-puppy-400 p-4 rounded-full shadow-sm">
+      <TouchableOpacity className="absolute bottom-12 right-10 bg-puppy-400 p-4 rounded-full shadow-sm">
         <Icon name="Plus" size={24} />
       </TouchableOpacity>
     </SafeAreaView>
