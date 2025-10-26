@@ -58,7 +58,9 @@ export default function HomeScreen() {
   return (
     <SafeAreaView className="bg-monotone-100 flex-1">
       <View className="flex-row px-4 py-2 items-center">
-        <TouchableOpacity onPress={() => {}}>
+        <TouchableOpacity onPress={() => {
+          
+        }}>
           <Icon name="Menu" size={24} />
         </TouchableOpacity>
         <View className="absolute left-0 right-0 items-center">
