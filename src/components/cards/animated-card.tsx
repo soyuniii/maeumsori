@@ -1,12 +1,13 @@
 import { Text } from "~/styles/text";
 
 import { Image } from "expo-image";
+import { router } from "expo-router";
 import { TouchableOpacity } from "react-native";
 import Animated, {
-    Extrapolation,
-    interpolate,
-    SharedValue,
-    useAnimatedStyle
+  Extrapolation,
+  interpolate,
+  SharedValue,
+  useAnimatedStyle
 } from "react-native-reanimated";
 
 const ITEM_WIDTH = 200;
@@ -71,7 +72,7 @@ export const AnimatedCard = ({ item, index, scrollX }: AnimatedCardProps) => {
         shadowRadius: 3.84,
         elevation: 5,
       }]}>
-        <TouchableOpacity activeOpacity={0.6}>
+        <TouchableOpacity activeOpacity={0.6} onPress={()=>{router.push('/detail');}}>
         <Image
           source={item.source}
           style={{ width: 200, height: 200, borderRadius: 10 }}
