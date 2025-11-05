@@ -5,7 +5,6 @@ import { ScrollView, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import PlayPauseButton from "~/components/buttons/play-pause-button";
 import Back from "~/components/common/back";
-
 import { Text } from "~/styles/text";
 
 export default function DetailScreen() {
@@ -13,7 +12,7 @@ export default function DetailScreen() {
 
     return(
         <SafeAreaView className="bg-monotone-300 flex-1">
-          <Back/>
+            <Back />
             <View className="flex-row m-8 items-center justify-center">
                 <TouchableOpacity onPress={() => { router.push("/detail/cover")}}>
                 <Image 
