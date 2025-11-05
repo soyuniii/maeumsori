@@ -1,5 +1,6 @@
 import { AnimatedCard } from "@/src/components/cards/animated-card";
 import { format } from "date-fns";
+import { router } from "expo-router";
 import { useEffect, useRef } from "react";
 import { Dimensions, FlatList, ListRenderItem, TouchableOpacity, View } from "react-native";
 import Animated, {
@@ -59,7 +60,7 @@ export default function HomeScreen() {
     <SafeAreaView className="bg-monotone-100 flex-1">
       <View className="flex-row px-4 py-2 items-center">
         <TouchableOpacity onPress={() => {
-          
+          router.push('/list');
         }}>
           <Icon name="Menu" size={24} />
         </TouchableOpacity>
